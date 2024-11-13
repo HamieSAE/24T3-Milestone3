@@ -8,6 +8,11 @@ public class BTNManager : MonoBehaviour
 
     /*------------> Pause Functionality <-------------*/
     public GameObject pausePannel;
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
